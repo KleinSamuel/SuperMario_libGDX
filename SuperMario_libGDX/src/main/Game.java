@@ -8,6 +8,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import handler.BoundedCamera;
 import handler.Content;
 import handler.GameStateManager;
+import handler.SMInput;
+import handler.SMInputProcessor;
 
 public class Game implements ApplicationListener{
 
@@ -28,8 +30,10 @@ public class Game implements ApplicationListener{
 	@Override
 	public void create() {
 		
+		Gdx.input.setInputProcessor(new SMInputProcessor());
 		
 		res = new Content();
+		res.loadTexture("res/images/mario_small_right.png");
 		
 		cam = new BoundedCamera();
 		cam.setToOrtho(false, V_WIDTH, V_HEIGHT);
@@ -49,6 +53,7 @@ public class Game implements ApplicationListener{
 		gsm.update(Gdx.graphics.getDeltaTime());
 		gsm.render();
 		
+		SMInput.update();
 	}
 	
 	@Override
