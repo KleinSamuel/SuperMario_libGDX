@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="ground_sprite" tilewidth="32" tileheight="32" tilecount="6" columns="3">
+  <image source="ground_sprite.png" width="96" height="64"/>
+ </tileset>
+ <layer name="ground" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU4AKMQMyEhpmxyDPj4SOrZwFiVjTMhkWeDQ8fm/qRYh4A4zgBNQ==
+  </data>
+ </layer>
+</map>

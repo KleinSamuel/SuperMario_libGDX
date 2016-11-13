@@ -12,8 +12,8 @@ import handler.GameStateManager;
 public class Game implements ApplicationListener{
 
 	public static final String TITLE = "SUPER MARIO";
-	public static final int V_WIDTH = 320;
-	public static final int V_HEIGHT = 240;
+	public static final int V_WIDTH = 640;
+	public static final int V_HEIGHT = 480;
 	public static final int SCALE = 2;
 	public static final float STEP = 1 / 60f;
 	
@@ -29,7 +29,7 @@ public class Game implements ApplicationListener{
 	public void create() {
 		
 		
-		
+		res = new Content();
 		
 		cam = new BoundedCamera();
 		cam.setToOrtho(false, V_WIDTH, V_HEIGHT);
@@ -49,14 +49,11 @@ public class Game implements ApplicationListener{
 		gsm.update(Gdx.graphics.getDeltaTime());
 		gsm.render();
 		
-		
-		
 	}
 	
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
-		
+		res.removeAll();
 	}
 	
 	@Override
