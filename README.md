@@ -5,3 +5,6 @@ It is for personal use and fun only.
 
 #Levels are created with the TileMapEditor:
 Source: https://thorbjorn.itch.io/tiled
+
+#Sprites and Images:
+Source: https://www.spriters-resource.com/snes/smarioworld/
